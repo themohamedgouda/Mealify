@@ -1,25 +1,21 @@
-*,
-*::after,
-::before {
+/* Start Genral Components */
+*,*::after,::before {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
 }
-
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
 a {
     text-decoration: none;
 }
-
-/* Navbar */
+/* End Genral Components */
+/* Start Navbar Section*/
 .nav-container{
     width: 100%;
     background-color: white;
@@ -41,7 +37,6 @@ a {
     width: 100%;
     border-bottom: 3px solid #ff0000;
 }
-
 .logo {
     width: 30%;
     padding: 10px;
@@ -51,21 +46,16 @@ a {
     font-size: 120%;
 
 }
-
 .logo h1 {
     margin: 0;
     position: relative;
 }
-
 .logo h1::after {
     content: '.';
     position: absolute;
     color: hsl(0, 84%, 44%);
     width: 5px;
 }
-
-
-
 .nav-menu {
     width: 50%;
     padding: 10px;
@@ -76,44 +66,36 @@ a {
 
 
 }
-
 .nav-menu ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
-
 .nav-menu ul li {
     padding: 10px;
 
 }
-
 .nav-menu ul li a,
 .logo a h1 {
     color: black;
 }
-
 .icon {
     font-size: 150%;
     padding: 10px;
 }
-
 .fa-moon {
     margin-right: 5px;
 }
-
-
-/* Home Section */
+/* End Navbar Section*/
+/* Start Home Section */
 img {
     width: 100%;
     display: block;
 }
-
 .head-container {
     background-color: #eee;
     margin-bottom: 5%;
 }
-
 .header {
     width: 70%;
     margin: auto;
@@ -121,66 +103,51 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-
 .leftpart {
     width: 40%;
 }
-
 .leftpart h2 {
     font-family: "Amatic SC", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 400%;
 }
-
 .leftpart p,
 .head-button {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 150%;
-
 }
-
 .head-button button {
     padding: 10px 20px;
     border: none;
 }
-
 .btn-main {
     background-color: red;
     border-radius: 0px 100vh 100vh;
     transition: all 1s;
-
 }
-
 .btn-main a {
     font-size: 150%;
     color: #fff;
 }
-
 .btn-second {
     background-color: rgba(0, 0, 0, 0);
     transition: all 1s;
 }
-
 .btn-second a {
     color: black;
     font-size: 150%;
-
 }
-
 .btn-second i {
     margin-right: 10px;
     /* background-image: linear-gradient(to right,red  50% , transparent 50% ); */
     padding: 10px;
     position: relative;
     z-index: 99;
-
 }
-
 .btn-second i::after {
     content: '';
     position: absolute;
@@ -193,26 +160,19 @@ img {
     border-radius: 50%;
     outline: solid  5px red;
 }
-
-
 .btn-main:hover,
 .btn-second:hover {
     opacity: 0.5;
 }
-
 .btn-second:hover a{
     color: red;
-    
 }
 .btn-second:hover ::after{
     outline: solid  5px black;
 }
-
 .rightpart {
     width: 40%;
-
 }
-
 .rightpart img {
     box-shadow: 1px 1px 20px 1px black;
     border-radius: 50%;
@@ -237,8 +197,8 @@ img {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-
-/* chefs section */
+/* End Home Section */
+/* Start chefs section */
 .chefs {
     width: 70%;
     margin: auto;
@@ -276,7 +236,6 @@ padding: 20px;
     left: 0;
     height: 100px;
 }
-
 .F1-chefs{
     box-shadow: 0px 1px 7px 0px black;
     border-radius: 5px;
@@ -289,11 +248,9 @@ padding: 20px;
     font-family: "Inter", sans-serif;
     margin: 8px;
 }
-
 .F1-chefs p {
     color: #7f7f90;
 }
-
 .chefs-caption p {
     font-family: "Amatic SC", sans-serif;
     font-weight: 400;
@@ -301,37 +258,30 @@ padding: 20px;
     font-size: 400%;
     margin: 0;
 }
-
 .chefs-caption p span {
     color: hsl(0, 84%, 44%);
 }
-
 .chefs1 {
     transition: all 1s;
 }
-
 .chefs1:hover {
     transform: scale(1.1, 1.1);
 }
-
-/* Gallary Section */
+/* End chefs section */
+/* Start Gallary Section */
 .gallary-contianer {
     margin-bottom: 5%;
     background-color: #eee;
     padding-block: 40px;
 }
-
 .gallary {
     width: 70%;
     margin: auto;
     text-align: center;
 }
-
 .gallary-cation span {
     color: #7f7f90;
-
 }
-
 .gallary-cation p {
     font-family: "Amatic SC", sans-serif;
     font-weight: 400;
@@ -339,28 +289,23 @@ padding: 20px;
     font-size: 400%;
     margin: 0;
 }
-
 .gallary-cation p span {
     color: hsl(0, 84%, 44%);
 }
-
 .gallary-content {
     columns: 3;
     column-gap: 15px;
     text-align: center;
     color: white;
 }
-
 .gallary-content img {
     margin-bottom: 15px;
     border: white 2px solid;
 }
-
 .gallary-pic {
     position: relative;
 
 }
-
 .pic-caption {
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
@@ -375,13 +320,11 @@ padding: 20px;
     overflow: hidden;
     transition: all 1s;
 }
-
 .gallary-pic:hover .pic-caption {
     top: 0;
 }
-
-/* Contact Section */
-
+/* End Gallary Section */
+/* Start Contact Section */
 .cont-contianer {
     margin-bottom: 5%;
 }
@@ -392,17 +335,13 @@ padding: 20px;
     width: 70%;
     margin: auto;
 }
-
 .contact-cation {
     text-align: center;
-
 }
-
 .contact-cation span {
     color: #7f7f90;
 
 }
-
 .contact-cation p {
     font-family: "Amatic SC", sans-serif;
     font-weight: 400;
@@ -410,30 +349,21 @@ padding: 20px;
     font-size: 400%;
     margin: 0;
 }
-
 .contact-cation p span {
     color: hsl(0, 84%, 44%);
 }
-
 .form-contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 15px;
-
 }
-
 .form-caption {
     width: 49.5%;
     background-color: #eee;
     padding: 10px;
     border-radius: 5px;
-
-
-
-
 }
-
 .form-caption i {
     color: #fff;
     width: 40px;
@@ -443,7 +373,6 @@ padding: 20px;
     z-index: 99;
     margin-right: 10px;
 }
-
 .form-caption i::after {
     content: '';
     position: absolute;
@@ -455,36 +384,30 @@ padding: 20px;
     border-radius: 50%;
     z-index: -1;
 }
-
 .form-caption h3 {
     font-family: "Inter", sans-serif;
     color: #7d7d7d;
 
 }
-
 .container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .container form {
     display: flex;
     flex-direction: column;
 }
-
 .container form label {
     margin-bottom: 10px;
     font-weight: bold;
 }
-
 .container form .row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-
 .container form .row input[type="text"],
 .container form .row input[type="email"],
 .container form .row textarea {
@@ -494,11 +417,9 @@ padding: 20px;
     border-radius: 4px;
     font-size: 16px;
 }
-
 .container form .row textarea {
     resize: vertical;
 }
-
 .container form input[type="submit"] {
     background-color: red;
     color: #fff;
@@ -510,17 +431,14 @@ padding: 20px;
     align-self: center;
     border-radius: 20px;
 }
-
 .container form input[type="submit"]:hover {
     background-color: #c02020;
 }
-
-/* footer section */
+/* End Contact Section */
+/* Start Footer section */
 .foot-container {
     background-color: black;
-
 }
-
 .footer {
     width: 70%;
     margin: auto;
@@ -530,88 +448,70 @@ padding: 20px;
     font-size: 110%;
     padding-top: 20px;
 }
-
 .footer a {
     color: white;
 }
-
 .foot-left {
     width: 30%;
 }
-
 .logo-image img {
     width: 20px;
 }
-
 .logo-header {
     margin: 0;
     padding: 0;
 }
-
 .head {
     display: flex;
     align-items: center;
     column-gap: 5px;
     padding: 5px;
 }
-
 .head h2 {
     margin: 0;
     position: relative;
 
 }
-
 .head h2::after {
     content: '.';
     position: absolute;
     color: hsl(0, 84%, 44%);
     width: 5px;
 }
-
 .soial-media h3 {
     text-align: center;
 }
-
 .soial-media ul {
     display: flex;
     justify-content: space-evenly;
 }
-
 .foot-center {
     width: 30%;
 }
-
 .center-content ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 5px;
 }
-
 .center-content ul a {
     color: white;
 
 }
-
 .soial-media ul li i {
     color: white;
     font-size: 130%;
 }
-
 .gg {
     width: 40%;
 }
-
 .foot-mail {
     width: 60%;
     padding: 10px;
     border-radius: 5px;
     border: none;
     margin: 10px;
-
-
 }
-
 .btn-foot {
     width: 30%;
     padding: 10px;
@@ -619,21 +519,18 @@ padding: 20px;
     border: none;
     border-radius: 5px;
     color: white;
-
 }
 .btn-foot:hover{
     background-color: hsl(0, 84%, 44%);
 }
 .btn-foot i{
 margin-right: 10px;
-
 }
-
 .right-part {
     width: 30%;
 }
-
 .right-part i {
     color: red;
     padding: 5px;
 }
+/* End Footer section */
